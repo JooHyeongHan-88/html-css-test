@@ -10,17 +10,17 @@
         <meta property="og:site_name" content="Citizen Developer"/>   
         <meta property="og:title" content="나의 포트폴리오"/>
         <meta property="og:description" content="나의 포트폴리오를 구경하세요"/>
-        <meta property="og:image" content="./img/camera.png"/>
+        <meta property="og:image" content="./images/camera.png"/>
         <!-- <meta property="og:url" content="https://joohyeonghan-88.github.io/html-css-test/"/> -->
 
         <!-- title -->
         <title>Citizen Developer</title>
 
         <!-- favicon -->
-        <link rel="icon" href="./img/camera.png" />
+        <link rel="icon" href="./images/camera.png" />
 
         <!-- style -->
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./css/style.css">
 
         <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,60 +34,141 @@
 
     <body>
         <!-- header -->
-        <header>
-            <nav id="navbar" class="navbar fixed-top bg-light px-3 mb-3">
-                <a class="navbar-brand" href="#"><strong>Hello</strong></a>
-                <ul class="nav nav-pills">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyCareer">경력</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHobby">취미</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyEtc">기타</a>
-                  </li>
-                </ul>
-              </nav>
+        <header class="navbar navbar-expand-lg navbar-dark bg-light bd-navbar sticky-top">
+          <nav id="navbar" class="container xxl bg-light flex-wrap flex-lg-nowrap">
+              <a class="navbar-brand" style="color: rgb(64, 64, 134);" href="#"><strong>Hello</strong></a>
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#scrollspyCareer">경력</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#scrollspyHobby">취미</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#scrollspyEtc">기타</a>
+                </li>
+              </ul>
+            </nav>
         </header>
-        
-        <!-- main -->
-        <main data-bs-target="#navbar">
-            <!-- section -->
-            <section>
 
+        <main class="container">
+
+          <!-- main-top -->
+          <div class="card text-bg-dark mb-3" style="min-height: 20rem; margin: 10px; padding: 40px 20px 40px 20px;">
+            <div class="card-body main-top">
+              <h1>Bootstrap을 활용해 퍼스널 브랜딩 페이지 만들기</h1>
+              <div>다양한 태그와 라이브러리를 사용하여 자유롭게 표현해보세요</div>
+            </div>
+          </div>
+
+          <!-- main-middle -->
+          <div class="row" style="margin: 10px;">
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body" style="box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);">
+                  <h2 class="card-title">경력</h2>
+                  <a href="#scrollspyCareer" class="btn btn-primary">자세히 보기</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body" style="box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);">
+                  <h2 class="card-title">취미</h2>
+                  <a href="#scrollspyHobby" class="btn btn-primary">자세히 보기</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body" style="box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);">
+                  <h2 class="card-title">기타</h2>
+                  <a href="#scrollspyEtc" class="btn btn-primary">자세히 보기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- main -->
+          <div class="container bd-layout">
+            <!-- section -->
+            <section class="bd-main" data-bs-target="#navbar">
+              <article id="scrollspyCareer">
+                <h3><strong>경력</strong></h3>
+                <h4>학력 사항</h4>
+                <ul>
+                  <li>포항공과대학교 박사</li>
+                </ul>
+                <h4>직장</h4>
+                <ul>
+                  <li>Samsung Electronics</li>
+                </ul>
+                <h4>논문</h4>
+                <ul>
+                  <li><strong>Interior jump and contact singularity for compressible flows with inflow jump datumInterior jump and contact singularity for compressible flows with inflow jump datum</strong> Journal of Differential Equations · May 15, 2021</li>
+                  <li><strong>A numerical scheme for approximating interior jump discontinuity solution of a compressible Stokes systemA numerical scheme for approximating interior jump discontinuity solution of a compressible Stokes system</strong> Journal of Computational and Applied Mathematics · Jan 1, 2019</li>
+                  <li><strong>nterior discontinuity for a stationary compressible Stokes system with inflow datumInterior discontinuity for a stationary compressible Stokes system with inflow datum</strong> Computers & Mathematics with Applications · Nov 15, 2017</li>
+                  <li><strong>Numerical simulations of jump discontinuity solutions for compressible Stokes flowsNumerical simulations of jump discontinuity solutions for compressible Stokes flows</strong> Communications in Nonlinear Science and Numerical Simulation</li>
+                </ul>
+
+                <h4>활용 언어</h4>
+                <ul>
+                  <li>C언어 (초급)</li>
+                  <li>JAVA (초급)</li>
+                  <li>Python (중급)</li>
+                  <li>R (중급)</li>
+                  <li>매트랩 (중급)</li>
+                </ul>
+              </article>
+
+              <article id="scrollspyHobby">
+                <h3><strong>취미</strong></h3>
+                <ul>
+                  <li>노래 부르기</li>
+                  <li>요리 하기</li>
+                  <li>요리 유튜브 보기</li>
+                  <li>전통주 탐방</li>
+                  <li>헬스</li>
+                </ul>
+              </article>
+
+              <article id="scrollspyEtc">
+                <h3><strong>기타</strong></h3>
+                <p>아직도다양한 태그들이 남았답니다.</p>
+                <p>여기에서 더 다양한 태그들을 확인해보시고 간단하게 사용해보세요. </p>
+                <p>이미 만들어진 간단한 부트스트랩 스타일을 사용하고 싶다면? 부스트스트랩 문서를 참고해보세요. </p>
+              </article>
             </section>
-          
-            <div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div>
-            <div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div>
-            <div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div>
-            <div id="scrollspyCareer">ㅁㅁ</div>
 
             <!-- aside -->
-            <aside></aside>
-        </main>
-        <!-- <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
-          <h4 id="scrollspyHeading1">First heading</h4>
-          <div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div>
-            <div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div>
-            <div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div>
-            <div>ㅁㅁ</div>
-          <h4 id="scrollspyHeading2">Second heading</h4>
-          <div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div>
-            <div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div>
-            <div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div><div>a</div>
-            <div>ㅁㅁ</div>
-          <h4 id="scrollspyHeading3">Third heading</h4>
-          <p>...</p>
-          <h4 id="scrollspyHeading4">Fourth heading</h4>
-          <p>...</p>
-          <h4 id="scrollspyHeading5">Fifth heading</h4>
-          <p>...</p>
-        </main> -->
+            <aside class="bd-sidebar">
+              <div class="card text-bg-light mb-3">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>About</strong></h5>
+                  <p class="card-text">저에 대해 더 궁금하신가요? 자세히 알고 싶다면 아래의 소셜을 확인해 주세요</p>
+                </div>
+              </div>
 
-        
+              <div class="card border-light mb-3">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Social</strong></h5>
+                    <ul class="card-text" style="list-style: none;">
+                      <li><a href="https://www.samsung.com/sec/" target="_blank">페이스북</a></li>
+                      <li><a href="https://www.samsung.com/sec/" target="_blank">인스타그램</a></li>
+                      <li><a href="https://www.linkedin.com/in/joohyeong-han-7a26481b4/" target="_blank">링크드인</a></li>
+                      <li><a href="mailto:hanjoo8821.gmail.com">메일 보내기</a></li>
+                      <li><a href="tel:010-7111-4604">전화 걸기</a></li>
+                    </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </main>
 
         <!-- footer -->
-        <footer></footer>
+        <footer class="bd-footer py-4 py-md-5 mt-5 bg-light" style="text-align: center; border-top: 1px solid rgb(219, 219, 219);">
+          <p>template built for Bootstrap</p>
+          <a href="#">Back to top</a>
+        </footer>
     </body>
 </html>

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+* {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+.main-top {
+    max-width: 50vw;
+}
+
+@media (min-width: 992px) {
+    .bd-layout {
+        display: grid;
+        grid-template-areas: "main sidebar";
+        grid-template-columns: 5fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+.bd-main {
+    grid-area: main;
+}
+
+.bd-sidebar {
+    grid-area: sidebar;
+    padding-top: 10px;
+}
+
+@media (min-width: 992px) {
+    .bd-sidebar {
+        position: sticky;
+        top: 5rem;
+        display: block;
+        height: calc(100vh - 6rem);
+        padding-left: .25rem;
+        margin-left: -.25rem;
+        overflow-y: auto;
+    }
+}
+
+article {
+    margin: 10px;
+    padding: 25px;
+    border-radius: 7px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
+}
