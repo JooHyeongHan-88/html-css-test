@@ -4,8 +4,12 @@
     font-family: 'Gowun Dodum', sans-serif;
 }
 
+.nvar-head {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
+}
+
 .main-top {
-    max-width: 50vw;
+    max-width: 600px;
 }
 
 @media (min-width: 992px) {
@@ -43,4 +47,9 @@ article {
     padding: 25px;
     border-radius: 7px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
+}
+
+.bd-footer {
+    text-align: center;
+    border-top: 1px solid rgb(219, 219, 219);
 }
