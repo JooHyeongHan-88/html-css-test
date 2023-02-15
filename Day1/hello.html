@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Hello HTML/CSS</title>
+        <link rel="stylesheet" href="/Day1/style.css">
+    </head>
+
+    <body>
+        <!-- 헤더 -->
+        <header>
+            <span class="logo"><img src="/Day1/samsung.png" width="140" style="vertical-align: middle; filter: invert(100%);"></span>
+            <nav>
+                <ul>
+                    <li>AAAA</li>
+                    <li>BBBB</li>
+                    <li>CCCC</li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- 메인 -->
+        <main>
+            <!-- Table -->
+            <section>
+                <h1> Table </h1>
+                <table class = "myTable">
+                    <caption>Table Caption</caption>
+                    <thead>
+                        <tr>
+                            <th>1-1</th>
+                            <th>1-2</th>
+                            <th>1-3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Left</td>
+                            <td>2-2</td>
+                            <td>2-3</td>
+                        </tr>
+                        <tr>
+                            <td>3-2</td>
+                            <td>3-3</td>
+                        </tr>
+                        <tr>
+                            <td>4-2</td>
+                            <td>4-3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">tfoot</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <!-- Input -->
+            <section>
+                <h1> Input </h1>
+                <input type="date">
+                <input type="color">
+            </section>
+
+            <!-- CSS -->
+            <section>
+                <h1> CSS </h1>
+                <button class="color-bv short">short</button>
+                <button class="color-bv long">long</button>
+                <button id="my-button">내 버튼</button>
+            </section>
+
+            <!-- SELECTOR -->
+            <section>
+                <h1> Selector </h1>
+                <!-- test -->
+                <p class="test"><span>테스트</span></p>
+                <!-- span.test -->
+                <p><span class="test">안녕하세요</span></p>
+                <!-- span > .test -->
+                <p><span><button class="test">버튼</button></span></p>
+            </section>
+
+            <!-- Block / Inline -->
+            <section>
+                <h1> Block / Inline </h1>
+                <div class = "divTable">
+                    <p><span>1-1</span><span>1-2</span><span>1-3</span></p>
+                    <p><span>2-1</span><span>2-2</span><span>2-3</span></p>
+                    <p><span>3-1</span><span>3-2</span><span>3-3</span></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>한주형 hanjoo88.han@samsung.com</p>
+        </footer>
+    </body>
+</html>

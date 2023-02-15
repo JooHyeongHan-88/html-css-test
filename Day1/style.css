@@ -1,0 +1,105 @@
+/* header */
+header {
+    background-color: #0917aa;
+    color: white;
+    padding: 20px;
+    /* display: flex; */
+}
+
+nav > ul {
+    list-style: none;
+    text-align: right;
+}
+
+nav > ul > li {
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 110%;
+}
+
+.logo {
+    margin-left: 20px;
+    float: left;
+    vertical-align: middle;
+}
+
+/* section */
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Table */
+.myTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.myTable caption {
+    font-size: 90%;
+    font-weight: bold;
+    text-align: left;
+    color: grey;
+}
+
+.myTable th, td {
+    padding: 8px;
+    /* text-align: left; */
+    border-bottom: 1px solid #DDD;
+}
+
+.myTable tbody tr:hover {
+    background-color: #D6EEEE;
+}
+
+.myTable tbody tr:active {
+    background-color: #fff7e2;
+}
+
+.divTable p {
+    border: 1px solid red;
+    margin: 0;
+}
+
+.divTable p span {
+    border: 1px dotted blue;
+    margin: 0;
+    padding: 0 20px;
+}
+
+/* footer */
+footer {
+    text-align: right;
+    color: lightgray;
+}
+
+/* etc */
+.color-bv {
+    color: rgb(119, 64, 122);
+    font-weight: bold;
+}
+
+.short {
+    width: 50px;
+}
+
+.long {
+    width: 100px;
+}
+
+#my-button {
+    color: rgb(255, 174, 0);
+    font-weight: bold;
+}
+
+span > .test {
+    color: red;
+}
+
+span.test {
+    color: blue;
+}
+
+.test {
+    color: yellow;
+}
